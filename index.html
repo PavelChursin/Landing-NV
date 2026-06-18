@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeuroVision — KYC и антифрод для онлайн-регистрации</title>
+    <meta
+      name="description"
+      content="NeuroVision помогает бизнесу удалённо проверять клиентов, снижать fraud, ускорять онбординг и автоматизировать KYC/AML-процессы."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <div class="container header-inner">
+        <a class="logo" href="#top" aria-label="NeuroVision">
+          <span class="logo-mark">N</span>
+          <span>NeuroVision</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-menu-toggle>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="primary-nav" id="primary-nav" data-nav>
+          <a href="#solutions">Решения</a>
+          <a href="#industries">Для кого</a>
+          <a href="#flow">Как работает</a>
+          <a href="#integration">Интеграция</a>
+          <a href="#security">Безопасность</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <a class="btn btn-small" href="#demo">Получить демо</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow">KYC и anti-fraud для массового онбординга</div>
+            <h1>Проверяйте пользователей онлайн быстрее, безопаснее и без роста ручной KYC-команды</h1>
+            <p class="lead">
+              NeuroVision объединяет проверку документов, распознавание лица, liveness detection, AML screening
+              и anti-fraud в одной платформе для fintech, crypto, МФО, iGaming, банков, маркетплейсов и цифровых
+              сервисов.
+            </p>
+            <ul class="hero-benefits">
+              <li>Снижайте fraud, мультиаккаунты и поддельные регистрации до допуска пользователя в сервис</li>
+              <li>Ускоряйте онбординг клиентов с часов и дней до минут</li>
+              <li>Автоматизируйте ручные проверки и снижайте cost per verification</li>
+            </ul>
+            <div class="hero-actions">
+              <a class="btn" href="#demo">Получить демо NeuroVision</a>
+              <a class="text-link" href="#demo" data-interest="Интерес: аудит KYC-flow">Получить аудит KYC-flow</a>
+            </div>
+            <p class="microcopy">
+              Покажем, как NeuroVision работает на вашем сценарии: регистрация, документ, лицо, liveness, AML и
+              fraud decision.
+            </p>
+          </div>
+
+          <div class="verification-panel" aria-label="Verification dashboard">
+            <div class="panel-top">
+              <div>
+                <span class="panel-dot"></span>
+                Verification flow
+              </div>
+              <span class="status-pill">Live check</span>
+            </div>
+            <div class="identity-card">
+              <div class="avatar-abstract">
+                <span></span>
+              </div>
+              <div>
+                <strong>User ID NV-4821</strong>
+                <p>Session from mobile SDK</p>
+              </div>
+            </div>
+            <div class="flow-list">
+              <div class="flow-row complete">
+                <span class="flow-icon">01</span>
+                <div>
+                  <strong>Document check</strong>
+                  <p>Passport OCR + authenticity signals</p>
+                </div>
+                <b>Passed</b>
+              </div>
+              <div class="flow-row complete">
+                <span class="flow-icon">02</span>
+                <div>
+                  <strong>Face match</strong>
+                  <p>Selfie compared with document photo</p>
+                </div>
+                <b>98%</b>
+              </div>
+              <div class="flow-row complete">
+                <span class="flow-icon">03</span>
+                <div>
+                  <strong>Liveness</strong>
+                  <p>Anti-spoofing and deepfake checks</p>
+                </div>
+                <b>Passed</b>
+              </div>
+              <div class="flow-row review">
+                <span class="flow-icon">04</span>
+                <div>
+                  <strong>AML screening</strong>
+                  <p>Sanctions, PEP, watchlists</p>
+                </div>
+                <b>Clear</b>
+              </div>
+              <div class="score-card">
+                <div>
+                  <span>Fraud score</span>
+                  <strong>Low risk</strong>
+                </div>
+                <div class="score-meter"><span></span></div>
+              </div>
+            </div>
+            <div class="decision-row">
+              <span>Decision</span>
+              <div>
+                <b>Approved</b>
+                <span>Review</span>
+                <span>Declined</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="value">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Единый слой проверки</span>
+            <h2>Один verification layer для роста, compliance и защиты от fraud</h2>
+          </div>
+          <div class="cards cards-3">
+            <article class="card">
+              <span class="card-icon">CEO</span>
+              <h3>Для CEO и COO</h3>
+              <p>Снижает операционные расходы на ручную проверку и помогает масштабировать регистрацию без пропорционального роста команды.</p>
+            </article>
+            <article class="card">
+              <span class="card-icon">AML</span>
+              <h3>Для Compliance и Risk</h3>
+              <p>Помогает контролировать KYC/AML, санкционные риски, фейковые документы, мультиаккаунты и подозрительных пользователей.</p>
+            </article>
+            <article class="card">
+              <span class="card-icon">API</span>
+              <h3>Для Product и IT</h3>
+              <p>Подключается через API/SDK и помогает сделать проверку частью удобного пользовательского onboarding-flow.</p>
+            </article>
+          </div>
+          <div class="soft-cta">
+            <a class="btn btn-secondary" href="#demo">Получить консультацию по вашему KYC-сценарию</a>
+            <p>Не нужно сразу менять текущий KYC-процесс. Можно начать с пилота на одном потоке пользователей, стране, продукте или high-risk сегменте.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="problems">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Где теряется рост</span>
+            <h2>Когда KYC работает плохо, бизнес теряет деньги сразу в нескольких местах</h2>
+          </div>
+          <div class="cards cards-4">
+            <article class="card">
+              <h3>Fraud проходит на входе</h3>
+              <p>Фейковые документы, чужие паспорта, мультиаккаунты, deepfake-атаки и подозрительные пользователи попадают в продукт до того, как команда успевает их проверить.</p>
+            </article>
+            <article class="card">
+              <h3>Ручная проверка не масштабируется</h3>
+              <p>Чем больше регистраций, тем больше заявок уходит на ручную обработку. Растёт нагрузка на KYC, AML, Risk, Fraud и Support-команды.</p>
+            </article>
+            <article class="card">
+              <h3>Пользователи бросают регистрацию</h3>
+              <p>Долгий, сложный или неудобный KYC снижает conversion to verified user. Бизнес платит за привлечение клиента, но теряет его на этапе проверки.</p>
+            </article>
+            <article class="card">
+              <h3>Compliance-риски становятся дороже</h3>
+              <p>Ошибки в KYC/AML могут привести к регуляторным претензиям, блокировкам, аудитам, штрафам и репутационному ущербу.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="solution">
+        <div class="container split-section">
+          <div class="section-heading sticky-heading">
+            <span class="eyebrow">Решение</span>
+            <h2>NeuroVision решает KYC как бизнес-задачу, а не как отдельную техническую функцию</h2>
+          </div>
+          <div class="solution-stack">
+            <article class="solution-block">
+              <h3>Быстрая проверка без потери безопасности</h3>
+              <p>Пользователь проходит проверку онлайн: загружает документ, делает селфи или видео, проходит liveness, а система автоматически сверяет данные и принимает решение.</p>
+              <ul class="check-list">
+                <li>OCR-распознавание документов</li>
+                <li>Проверка подлинности документа</li>
+                <li>Face match</li>
+                <li>Liveness detection</li>
+                <li>Risk scoring</li>
+              </ul>
+            </article>
+            <article class="solution-block">
+              <h3>Меньше ручной работы для KYC и Risk-команд</h3>
+              <p>NeuroVision автоматически обрабатывает стандартные проверки, а на ручной разбор отправляет только спорные или рискованные кейсы.</p>
+              <ul class="check-list">
+                <li>Автоматические правила принятия решений</li>
+                <li>Fraud scoring</li>
+                <li>Маршрутизация high-risk кейсов</li>
+                <li>Отчёты по причинам отказа или дополнительной проверки</li>
+              </ul>
+            </article>
+            <article class="solution-block">
+              <h3>Контроль AML и fraud-рисков</h3>
+              <p>Платформа помогает выявлять подозрительных пользователей, санкционные совпадения, PEP, фейковые документы, мультиаккаунты и попытки обойти проверку.</p>
+              <ul class="check-list">
+                <li>AML screening</li>
+                <li>Проверка санкционных списков</li>
+                <li>Anti-fraud checks</li>
+                <li>Выявление подозрительных паттернов</li>
+                <li>Защита от spoofing и deepfake-сценариев</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="solutions">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Платформа</span>
+            <h2>Что входит в платформу NeuroVision</h2>
+          </div>
+          <div class="product-grid">
+            <article class="product-card">
+              <h3>KYC Verification</h3>
+              <p>Автоматическая удалённая идентификация пользователя по документу, лицу и дополнительным проверкам.</p>
+              <ul>
+                <li>Ускоряет регистрацию клиентов</li>
+                <li>Снижает количество фейковых заявок</li>
+                <li>Уменьшает нагрузку на ручную проверку</li>
+                <li>Помогает выполнять требования KYC/AML</li>
+                <li>Повышает conversion to verified user</li>
+              </ul>
+              <a class="text-link" href="#flow">Посмотреть KYC-сценарий</a>
+            </article>
+            <article class="product-card">
+              <h3>Face Recognition + Liveness Detection</h3>
+              <p>Система проверяет, что перед камерой находится реальный человек, а его лицо совпадает с фотографией в документе.</p>
+              <ul>
+                <li>Защищает от использования чужих документов</li>
+                <li>Снижает риск spoofing и deepfake-атак</li>
+                <li>Помогает предотвращать мультиаккаунты</li>
+                <li>Работает в онлайн-онбординге</li>
+                <li>Ускоряет биометрическую проверку</li>
+              </ul>
+              <a class="text-link" href="#demo">Получить демо face match</a>
+            </article>
+            <article class="product-card">
+              <h3>Document Verification</h3>
+              <p>Проверка подлинности документов, распознавание данных и выявление признаков подделки.</p>
+              <ul>
+                <li>Выявляет фальшивые или изменённые документы</li>
+                <li>Сокращает ручную проверку паспортов, ID и водительских удостоверений</li>
+                <li>Повышает качество клиентской базы</li>
+                <li>Помогает проверять пользователей из разных стран</li>
+                <li>Передаёт результат проверки в бизнес-систему клиента</li>
+              </ul>
+              <a class="text-link" href="#demo">Проверить документы на тестовом сценарии</a>
+            </article>
+            <article class="product-card">
+              <h3>AML Screening</h3>
+              <p>Проверка пользователей по санкционным спискам, PEP, watchlists и риск-базам.</p>
+              <ul>
+                <li>Снижает AML и санкционные риски</li>
+                <li>Помогает compliance-команде готовиться к проверкам</li>
+                <li>Уменьшает ручную нагрузку AML-специалистов</li>
+                <li>Позволяет выявлять high-risk пользователей</li>
+                <li>Подходит для финансовых, крипто- и платежных компаний</li>
+              </ul>
+              <a class="text-link" href="#demo">Обсудить AML-сценарий</a>
+            </article>
+            <article class="product-card product-card-wide">
+              <h3>Anti-Fraud Platform</h3>
+              <p>Выявление подозрительных пользователей, мультиаккаунтов, поддельных документов и fraud-сценариев на этапе регистрации.</p>
+              <ul>
+                <li>Снижает fraud-loss</li>
+                <li>Помогает блокировать мошенников до операции</li>
+                <li>Уменьшает bonus abuse, chargeback и account farming</li>
+                <li>Защищает маркетинговый бюджет от фейковых регистраций</li>
+                <li>Даёт Risk и Fraud-командам больше контроля</li>
+              </ul>
+              <a class="text-link" href="#demo">Получить fraud-аудит</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="industries">
+        <div class="container">
+          <div class="section-heading wide">
+            <span class="eyebrow">Сегменты</span>
+            <h2>NeuroVision подходит компаниям, где онлайн-регистрация связана с деньгами, рисками или доверием</h2>
+          </div>
+          <div class="industry-list">
+            <article>
+              <h3>Fintech, payments, e-wallets</h3>
+              <p><strong>Проблема:</strong> нужно быстро проверять пользователей, снижать AML-риски и не терять CAC на долгом KYC.</p>
+              <p><strong>Решение:</strong> KYC, document verification, liveness и AML в одном API для масштабирования платежного продукта.</p>
+            </article>
+            <article>
+              <h3>Crypto exchanges, wallets, OTC</h3>
+              <p><strong>Проблема:</strong> фейковые документы, санкционные пользователи, AML-риски, лицензирование и мультиаккаунты.</p>
+              <p><strong>Решение:</strong> проверка документов, лица, liveness и AML screening для compliant onboarding.</p>
+            </article>
+            <article>
+              <h3>МФО и digital lending</h3>
+              <p><strong>Проблема:</strong> поддельные документы, кредитный fraud, мультиаккаунты и плохие заявки до выдачи займа.</p>
+              <p><strong>Решение:</strong> проверка заёмщика до одобрения и автоматическое выявление рискованных заявок.</p>
+            </article>
+            <article>
+              <h3>Betting / iGaming</h3>
+              <p><strong>Проблема:</strong> бонус-хантеры, мультиаккаунты, chargeback, возрастная верификация и compliance.</p>
+              <p><strong>Решение:</strong> KYC и anti-fraud для игроков до депозита, вывода средств или получения бонуса.</p>
+            </article>
+            <article>
+              <h3>Маркетплейсы, delivery, HR-tech, аренда, e-commerce</h3>
+              <p><strong>Проблема:</strong> фейковые продавцы, исполнители, курьеры, пользователи и массовые регистрации.</p>
+              <p><strong>Решение:</strong> автоматическая проверка личности и документов без роста ручной команды.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="flow">
+        <div class="container">
+          <div class="section-heading wide">
+            <span class="eyebrow">Процесс</span>
+            <h2>Пользователь проходит проверку за несколько шагов, а бизнес получает понятное решение по риску</h2>
+          </div>
+          <div class="timeline">
+            <article>
+              <span>1</span>
+              <h3>Пользователь начинает регистрацию</h3>
+              <p>Клиент, заёмщик, игрок, продавец, курьер или исполнитель начинает онлайн-онбординг в вашем сервисе.</p>
+            </article>
+            <article>
+              <span>2</span>
+              <h3>Загружает документ</h3>
+              <p>Пользователь фотографирует паспорт, ID-карту, водительское удостоверение или другой документ.</p>
+            </article>
+            <article>
+              <span>3</span>
+              <h3>Проходит проверку лица и liveness</h3>
+              <p>Система проверяет, что перед камерой реальный человек, а его лицо совпадает с фотографией в документе.</p>
+            </article>
+            <article>
+              <span>4</span>
+              <h3>Запускается AML и anti-fraud проверка</h3>
+              <p>NeuroVision проверяет санкционные риски, подозрительные признаки, поддельные документы и fraud-сценарии.</p>
+            </article>
+            <article>
+              <span>5</span>
+              <h3>Система принимает решение</h3>
+              <p>Пользователь автоматически проходит проверку, отправляется на дополнительную проверку или отклоняется при высоком риске.</p>
+            </article>
+            <article>
+              <span>6</span>
+              <h3>Результат передаётся в вашу систему</h3>
+              <p>Решение можно передать в CRM, мобильное приложение, backend, risk engine, compliance workflow или внутреннюю систему клиента.</p>
+            </article>
+          </div>
+          <div class="center-cta">
+            <a class="btn btn-secondary" href="#demo">Посмотреть, как это будет работать в вашем onboarding-flow</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="cases">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Типовые сценарии результата</span>
+            <h2>Какие результаты можно получить после внедрения NeuroVision</h2>
+            <p>Ниже — типовые сценарии результата для компаний с массовой онлайн-регистрацией пользователей.</p>
+          </div>
+          <div class="case-grid">
+            <article>
+              <h3>Финтех / платежный сервис</h3>
+              <p><strong>Было:</strong> пользователи бросали регистрацию на KYC, часть проверок уходила на ручную обработку, compliance-команда не успевала обрабатывать рост заявок.</p>
+              <p><strong>Стало:</strong> KYC-проверка проходит автоматически, рискованные кейсы уходят на дополнительную проверку, команда видит причины отклонений.</p>
+            </article>
+            <article>
+              <h3>МФО / digital lending</h3>
+              <p><strong>Было:</strong> часть заявок приходила с поддельными документами, чужими данными и признаками мультиаккаунтов.</p>
+              <p><strong>Стало:</strong> NeuroVision проверяет документ, лицо и liveness до выдачи займа, а high-risk заявки отправляются на дополнительный контроль.</p>
+            </article>
+            <article>
+              <h3>Crypto / AML</h3>
+              <p><strong>Было:</strong> компания готовилась к лицензированию и должна была усилить KYC/AML-процесс.</p>
+              <p><strong>Стало:</strong> появился единый verification flow: документ, лицо, liveness, AML screening и отчётность для compliance-команды.</p>
+            </article>
+            <article>
+              <h3>iGaming</h3>
+              <p><strong>Было:</strong> бонусные кампании привлекали не только реальных игроков, но и мультиаккаунты, bonus abuse и фейковые регистрации.</p>
+              <p><strong>Стало:</strong> платформа усилила проверку игроков на рискованных этапах: регистрация, получение бонуса, вывод средств.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="integration">
+        <div class="container integration-grid">
+          <div>
+            <div class="section-heading">
+              <span class="eyebrow">Интеграция</span>
+              <h2>Подключается к вашему onboarding-flow через API или SDK</h2>
+              <p>NeuroVision можно встроить в мобильное приложение, сайт, CRM, backend, risk engine или compliance workflow.</p>
+            </div>
+            <ul class="check-list columns">
+              <li>API для проверки пользователей</li>
+              <li>SDK для мобильных сценариев</li>
+              <li>Возможность поэтапного внедрения</li>
+              <li>Sandbox для тестирования</li>
+              <li>Передача результата проверки в бизнес-систему</li>
+              <li>Настройка правил принятия решений</li>
+              <li>Возможность начать с одного use case</li>
+            </ul>
+          </div>
+          <div class="integration-card">
+            <div class="api-flow">
+              <span>User App</span>
+              <i></i>
+              <span>NeuroVision API/SDK</span>
+              <i></i>
+              <span>Checks</span>
+              <i></i>
+              <span>Decision</span>
+              <i></i>
+              <span>Client System</span>
+            </div>
+            <div class="implementation-options">
+              <article>
+                <h3>Пилот на отдельном сегменте</h3>
+                <p>Например, только high-risk заявки, новый рынок, новый продукт или отдельная страна.</p>
+              </article>
+              <article>
+                <h3>Параллельный тест с текущим KYC</h3>
+                <p>Можно сравнить pass rate, скорость, manual review и fraud detection рядом с текущим поставщиком.</p>
+              </article>
+              <article>
+                <h3>Полное подключение в onboarding-flow</h3>
+                <p>После пилота решение масштабируется на основной поток пользователей.</p>
+              </article>
+            </div>
+            <a class="btn btn-secondary" href="#demo">Получить техническую консультацию</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="security">
+        <div class="container">
+          <div class="section-heading wide">
+            <span class="eyebrow">Безопасность</span>
+            <h2>Контроль данных, безопасности и compliance на уровне требований regulated-бизнеса</h2>
+            <p>NeuroVision подходит компаниям, для которых важны персональные данные, биометрия, AML, аудит, безопасность и контроль инфраструктуры.</p>
+          </div>
+          <div class="security-grid">
+            <div class="security-list">
+              <span>Защита персональных данных</span>
+              <span>Работа с биометрическими данными</span>
+              <span>Облачный или on-premise-сценарий</span>
+              <span>Контроль доступа</span>
+              <span>Логирование действий и результатов</span>
+              <span>Отчётность для compliance и risk-команд</span>
+              <span>Настройка хранения данных под требования клиента</span>
+            </div>
+            <div class="cards cards-3 compact">
+              <article class="card">
+                <h3>Для Compliance</h3>
+                <p>Помогает документировать процесс проверки и снижать AML/санкционные риски.</p>
+              </article>
+              <article class="card">
+                <h3>Для Risk/Fraud</h3>
+                <p>Даёт больше контроля над suspicious users, fraud flags и high-risk кейсами.</p>
+              </article>
+              <article class="card">
+                <h3>Для IT/Security</h3>
+                <p>Позволяет обсудить архитектуру, API, хранение данных и требования к интеграции.</p>
+              </article>
+            </div>
+          </div>
+          <div class="center-cta">
+            <a class="btn btn-secondary" href="#demo">Запросить security и integration overview</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="objections">
+        <div class="container objections-grid">
+          <div class="section-heading">
+            <span class="eyebrow">Пилот без полной миграции</span>
+            <h2>Можно начать без риска для текущего KYC-процесса</h2>
+          </div>
+          <div class="objection-list">
+            <article>
+              <h3>«Интеграция будет долгой и сложной»</h3>
+              <p>Начинаем с ограниченного пилота: один сценарий, один сегмент пользователей, одна страна или high-risk поток.</p>
+            </article>
+            <article>
+              <h3>«Мы уже используем другого KYC-поставщика»</h3>
+              <p>NeuroVision можно протестировать параллельно и сравнить с текущим решением по фактическим метрикам.</p>
+            </article>
+            <article>
+              <h3>«KYC ухудшит конверсию»</h3>
+              <p>Пилот оценивается не только по безопасности, но и по onboarding conversion, pass rate, manual review и time to verify.</p>
+            </article>
+            <a class="btn" href="#demo">Запустить пилот без полной миграции</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="motivation">
+        <div class="container">
+          <div class="section-heading wide">
+            <span class="eyebrow">Почему сейчас</span>
+            <h2>Чем дольше KYC остаётся слабым местом, тем дороже обходится рост</h2>
+          </div>
+          <div class="motivation-grid">
+            <article><h3>Выгода</h3><p>Каждый незавершённый KYC — это потерянный CAC. Каждый мошеннический пользователь — это прямой убыток или будущий инцидент.</p></article>
+            <article><h3>Безопасность</h3><p>Фейковые документы, мультиаккаунты, deepfake и санкционные пользователи уже не редкие исключения, а стандартные риски цифрового онбординга.</p></article>
+            <article><h3>Уверенность</h3><p>Пилот позволяет принять решение не на обещаниях, а на данных: скорость проверки, pass rate, manual review, fraud flags и стоимость проверки.</p></article>
+            <article><h3>Комфорт</h3><p>Не нужно сразу перестраивать весь onboarding. Можно начать с одного потока и масштабировать только после результата.</p></article>
+            <article><h3>Авторитет</h3><p>Для regulated-сегментов сильный KYC/AML-процесс — это часть доверия со стороны партнёров, банков, регуляторов и инвесторов.</p></article>
+          </div>
+          <div class="center-cta">
+            <a class="btn btn-secondary" href="#demo">Обсудить пилот NeuroVision</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="faq">
+        <div class="container faq-grid">
+          <div class="section-heading">
+            <span class="eyebrow">FAQ</span>
+            <h2>Частые вопросы</h2>
+          </div>
+          <div class="faq-list">
+            <details>
+              <summary>Кому подходит NeuroVision?</summary>
+              <p>NeuroVision подходит компаниям, у которых есть онлайн-регистрация пользователей, финансовые операции, fraud-риски, требования KYC/AML или необходимость проверять клиентов удалённо.</p>
+            </details>
+            <details>
+              <summary>Можно ли протестировать NeuroVision без полной замены текущего решения?</summary>
+              <p>Да. Можно начать с пилота на отдельном потоке пользователей, конкретной стране, продукте, high-risk сегменте или параллельно с текущим KYC-поставщиком.</p>
+            </details>
+            <details>
+              <summary>Что именно проверяет NeuroVision?</summary>
+              <p>Платформа может проверять документы, лицо пользователя, совпадение лица с документом, liveness, AML/санкционные риски и признаки мошенничества.</p>
+            </details>
+            <details>
+              <summary>Не ухудшит ли KYC конверсию регистрации?</summary>
+              <p>Цель NeuroVision — не просто усилить проверку, а сделать её быстрее и удобнее. В пилоте можно отдельно измерять time to verify, pass rate, manual review и conversion to verified user.</p>
+            </details>
+            <details>
+              <summary>Что делать, если у нас уже есть Sumsub, Veriff или другой поставщик?</summary>
+              <p>Можно провести comparison pilot: протестировать NeuroVision на отдельном потоке и сравнить стоимость, скорость, pass rate, manual review и fraud detection.</p>
+            </details>
+            <details>
+              <summary>Какие данные нужны для расчёта стоимости?</summary>
+              <p>Обычно нужны: примерный объём проверок в месяц, страны пользователей, типы документов, текущий KYC-flow, доля ручных проверок и сценарии использования.</p>
+            </details>
+            <details>
+              <summary>Кто должен участвовать во встрече со стороны клиента?</summary>
+              <p>Лучше всего подключить Product, Risk/Fraud, Compliance/AML и IT. Для финансового результата также полезно участие COO или CEO.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section demo-section" id="demo">
+        <div class="container form-grid">
+          <div class="form-copy">
+            <span class="eyebrow">Демо под ваш сценарий</span>
+            <h2>Получите демо NeuroVision под ваш сценарий</h2>
+            <p>Расскажите, как сейчас устроена проверка пользователей, и мы покажем, какой KYC/anti-fraud flow подойдёт вашей компании.</p>
+            <div class="form-note">
+              После заявки мы свяжемся с вами, уточним сценарий проверки и покажем, как NeuroVision может работать в вашем onboarding-flow.
+            </div>
+          </div>
+          <form class="lead-form" id="lead-form" novalidate>
+            <div class="success-message" id="success-message" role="status" aria-live="polite">
+              Спасибо! Мы получили заявку и свяжемся с вами, чтобы обсудить ваш KYC-сценарий
+            </div>
+            <label>
+              <span>Имя *</span>
+              <input type="text" name="name" required autocomplete="name" />
+            </label>
+            <label>
+              <span>Рабочий email *</span>
+              <input type="email" name="email" required autocomplete="email" />
+            </label>
+            <label>
+              <span>Компания *</span>
+              <input type="text" name="company" required autocomplete="organization" />
+            </label>
+            <label>
+              <span>Сайт компании</span>
+              <input type="url" name="website" placeholder="https://example.com" />
+            </label>
+            <label>
+              <span>Должность *</span>
+              <input type="text" name="role" required autocomplete="organization-title" />
+            </label>
+            <label>
+              <span>Сегмент бизнеса *</span>
+              <select name="segment" required>
+                <option value="">Выберите сегмент</option>
+                <option>Fintech / Payments</option>
+                <option>Crypto</option>
+                <option>Bank / Neobank</option>
+                <option>MFO / Digital Lending</option>
+                <option>Betting / iGaming</option>
+                <option>Marketplace</option>
+                <option>Delivery</option>
+                <option>HR-tech</option>
+                <option>E-commerce</option>
+                <option>Другое</option>
+              </select>
+            </label>
+            <label>
+              <span>Сколько пользователей проходит регистрацию в месяц? *</span>
+              <select name="volume" required>
+                <option value="">Выберите объём</option>
+                <option>до 1 000</option>
+                <option>1 000–10 000</option>
+                <option>10 000–100 000</option>
+                <option>100 000+</option>
+              </select>
+            </label>
+            <label>
+              <span>Есть ли текущий KYC-поставщик?</span>
+              <select name="provider">
+                <option>нет</option>
+                <option>своё решение</option>
+                <option>Sumsub</option>
+                <option>Veriff</option>
+                <option>Onfido</option>
+                <option>Jumio</option>
+                <option>Persona</option>
+                <option>другое</option>
+              </select>
+            </label>
+            <fieldset>
+              <legend>Что хотите улучшить?</legend>
+              <label><input type="checkbox" name="goals" value="снизить fraud" /> <span>снизить fraud</span></label>
+              <label><input type="checkbox" name="goals" value="ускорить KYC" /> <span>ускорить KYC</span></label>
+              <label><input type="checkbox" name="goals" value="автоматизировать ручную проверку" /> <span>автоматизировать ручную проверку</span></label>
+              <label><input type="checkbox" name="goals" value="пройти аудит / лицензирование" /> <span>пройти аудит / лицензирование</span></label>
+              <label><input type="checkbox" name="goals" value="заменить текущего поставщика" /> <span>заменить текущего поставщика</span></label>
+              <label><input type="checkbox" name="goals" value="снизить стоимость проверки" /> <span>снизить стоимость проверки</span></label>
+              <label><input type="checkbox" name="goals" value="выйти на новый рынок" /> <span>выйти на новый рынок</span></label>
+            </fieldset>
+            <label class="full">
+              <span>Комментарий</span>
+              <textarea name="comment" rows="5" data-comment></textarea>
+            </label>
+            <button class="btn full" type="submit">Получить демо</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section final-cta">
+        <div class="container final-cta-inner">
+          <div>
+            <span class="eyebrow">Пилот NeuroVision</span>
+            <h2>Запустите пилот NeuroVision на одном пользовательском потоке и оцените результат до масштабирования</h2>
+            <p>В рамках пилота можно проверить скорость KYC, pass rate, manual review, fraud-сигналы и стоимость проверки без полной замены текущего процесса.</p>
+          </div>
+          <ol>
+            <li>Бесплатный разбор текущего KYC-flow перед пилотом</li>
+            <li>Помощь в выборе первого use case: high-risk заявки, новый рынок, отдельный продукт или comparison test</li>
+            <li>Финальный отчёт по результатам пилота для Product, Compliance, Risk и IT-команд</li>
+          </ol>
+          <div class="hero-actions">
+            <a class="btn" href="#demo">Запросить пилот NeuroVision</a>
+            <a class="text-link" href="#demo" data-interest="Интерес: аудит KYC-flow">Сначала получить аудит KYC-flow</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <a class="logo" href="#top"><span class="logo-mark">N</span><span>NeuroVision</span></a>
+          <p>KYC, распознавание лиц, проверка документов, AML screening и anti-fraud для компаний с массовой онлайн-регистрацией пользователей.</p>
+        </div>
+        <nav>
+          <a href="#solutions">Решения</a>
+          <a href="#industries">Для кого</a>
+          <a href="#flow">Как работает</a>
+          <a href="#integration">Интеграция</a>
+          <a href="#security">Безопасность</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <span class="copyright">© NeuroVision. Все права защищены.</span>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
