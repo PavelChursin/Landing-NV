@@ -46,6 +46,13 @@ textarea {
   font: inherit;
 }
 
+button.text-link {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
 .container {
   width: min(100% - 40px, var(--container));
   margin: 0 auto;
@@ -175,15 +182,15 @@ textarea {
 }
 
 .btn-secondary {
-  color: var(--orange-dark);
-  background: var(--orange-soft);
-  box-shadow: none;
+  color: var(--white);
+  background: var(--orange);
+  box-shadow: 0 16px 34px rgba(255, 106, 0, 0.24);
 }
 
 .btn-secondary:hover {
   color: var(--white);
-  background: var(--orange);
-  box-shadow: 0 16px 34px rgba(255, 106, 0, 0.22);
+  background: var(--orange-dark);
+  box-shadow: 0 20px 42px rgba(255, 106, 0, 0.3);
 }
 
 .text-link {
@@ -201,6 +208,14 @@ textarea {
 
 .text-link:hover::after {
   transform: translateX(4px);
+}
+
+.link-button {
+  text-align: left;
+}
+
+.link-button:hover {
+  color: var(--orange-dark);
 }
 
 .hero {
@@ -244,6 +259,15 @@ h2,
 h3,
 p {
   margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+li,
+span {
+  overflow-wrap: anywhere;
 }
 
 h1 {
@@ -728,6 +752,17 @@ h3 {
   align-items: start;
 }
 
+.hero-grid > *,
+.split-section > *,
+.integration-grid > *,
+.security-grid > *,
+.objections-grid > *,
+.faq-grid > *,
+.form-grid > *,
+.final-cta-inner > * {
+  min-width: 0;
+}
+
 .check-list.columns {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -921,6 +956,70 @@ h3 {
   box-shadow: var(--shadow);
 }
 
+.mini-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.mini-form label {
+  display: grid;
+  gap: 7px;
+  min-width: 0;
+}
+
+.mini-form label span {
+  color: #3e3e42;
+  font-size: 13px;
+  font-weight: 760;
+}
+
+.mini-form input {
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fff;
+  padding: 12px 13px;
+  outline: none;
+  transition:
+    border-color 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.mini-form input:focus {
+  border-color: var(--orange);
+  box-shadow: 0 0 0 4px rgba(255, 106, 0, 0.11);
+}
+
+.mini-form .is-invalid {
+  border-color: #d92d20;
+  box-shadow: 0 0 0 4px rgba(217, 45, 32, 0.08);
+}
+
+.mini-form .btn {
+  min-height: 48px;
+  white-space: normal;
+}
+
+.mini-success {
+  display: none;
+  grid-column: 1 / -1;
+  padding: 12px 14px;
+  border-radius: 14px;
+  color: #0f6d42;
+  background: #eaf9f1;
+  font-size: 14px;
+  font-weight: 720;
+}
+
+.mini-success.is-visible {
+  display: block;
+}
+
 .lead-form label,
 .lead-form fieldset {
   display: grid;
@@ -1049,13 +1148,75 @@ h3 {
 }
 
 .final-cta .btn {
-  color: var(--orange-dark);
-  background: var(--white);
-  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.12);
+  color: var(--white);
+  background: var(--orange);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.18);
 }
 
 .final-cta .text-link {
   color: var(--white);
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.modal.is-open {
+  display: flex;
+}
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(17, 17, 17, 0.54);
+  backdrop-filter: blur(8px);
+}
+
+.modal-panel {
+  position: relative;
+  width: min(100%, 640px);
+  min-width: 0;
+  max-height: min(90vh, 760px);
+  overflow: auto;
+  padding: 34px;
+  border-radius: 30px;
+  background: var(--white);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.28);
+}
+
+.modal-panel h2 {
+  margin-top: 12px;
+  font-size: clamp(28px, 5vw, 40px);
+}
+
+.modal-panel p {
+  color: var(--muted);
+}
+
+.modal-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--white);
+  color: var(--ink);
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.modal-form {
+  grid-template-columns: 1fr;
+  margin-top: 24px;
 }
 
 .site-footer {
@@ -1278,6 +1439,16 @@ h3 {
   .center-cta .btn,
   .objection-list .btn {
     width: 100%;
+  }
+
+  .modal {
+    padding: 14px;
+  }
+
+  .modal-panel {
+    width: 100%;
+    padding: 28px 20px;
+    border-radius: 22px;
   }
 
   .verification-panel {
